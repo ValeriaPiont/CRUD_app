@@ -61,7 +61,7 @@ public class SpringConfig implements WebMvcConfigurer {
         DriverManagerDataSource dataSource = new DriverManagerDataSource();
         Properties properties = new Properties();
 
-        try (FileInputStream in = new FileInputStream("C:\\Users\\Zver\\IdeaProjects\\Simple_CRUD_Application\\src\\main\\resources\\connectionInfo.properties")){
+        try (FileInputStream in = new FileInputStream("connectionInfo.properties")){
             properties.load(in);
         } catch (IOException e) {
             e.printStackTrace();
